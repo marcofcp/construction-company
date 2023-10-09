@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --yellow: #D6CD00;
+    --light-orange: #E45927;
+    --dark-orange: #AC421C;
+    --gray: #323F48;
+    --medium-gray: #606F79;
+    --light-gray: #ebebeb;
+    scroll-padding-top: 12vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    padding-top: 4.6em;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--yellow);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: 3px solid var(--dark-orange);
+}
+.header-navbar {
+    color: black;
+}
+.header-logo-box p {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.menu-navbar li {
+    list-style-type: none;
+}
+.menu-navbar a {
+    text-decoration: none;
+    color: var(--gray);
+    font-size: 1em;
+}
+.menu-navbar a:hover {
+    color: var(--dark-orange);
+}
+/* Hidden Menu icon */
+.open-hidden-menu {
+    width: 2.5em;
+    position: absolute;
+    top: 1em;
+    right: 2em;
+    display: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.open-hidden-menu:hover {
+    transform: scale(1.2);
+}
+
+/* HIDDEN MENU */
+
+.hidden-menu-container {
+    width: 70%;
+    height: 100vh;
+    background-color: #ac421cea;
+    position: fixed;
+    right: -70%;
+    top: 4.8em;
+    z-index: 99;
+    border-left: 3px solid var(--yellow);
+    transition: 0.3s;
+}
+.hidden-menu-box ul {
+    list-style-type: none;
+}
+.hidden-menu-box ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: ease-in-out 0.1s;
+}
+.hidden-menu-box ul a:hover {
+    border-bottom: 3px solid white;
+}
+.right {
+    right: 0% !important;
+}
+.close-hidden-menu {
+    width: 2.5em;
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.close-hidden-menu:hover {
+    transform: scale(1.4);
+    transform: rotate(360deg);
+}
+
+/* MAIN SECTION */
+
+.main-section {
+    background-image: url('./images/hero.jpg');
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 4em;
+    padding-left: 3em;
+    padding-right: 0;
+}
+.main-container {
+    width: 40em;
+    color: white;
+}
+.main-slogan-box {
+    background-color: #d6cb0090;
+    border-radius: 1em;
+    padding: 1.5em;
+}
+.main-slogan-box h1 {
+    font-size: 2.3em;
+    text-align: center;
+    line-height: 1.8em;
+    margin-bottom: 1em;
+}
+.slogan-description {
+    font-size: 1em;
+}
+.slogan-button-box {
+    margin-top: 2em;
+}
+.slogan-button-box a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    background-color: var(--light-orange);
+    padding: 0.8em 2em;
+    border-radius: 0.5em;
+    border: 1px solid var(--dark-orange);
+    transition: ease-in-out 0.2s;
+}
+.slogan-button-box a:hover {
+    background-color: var(--dark-orange);
+    border: 1px solid var(--light-orange);
+}
+
+/* SOBRE NÓS SECTION */
+
+
+/* Separador */
+
+.separador-section {
+    margin-top: 4em;
+}
+.titulo-section {
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+}
+.separador {
+    width: 8em;
+    height: 0.3em;
+    background-color: var(--light-orange);
+    margin: auto;
+    margin-bottom: 5em;
+}
+/* --------------- */
+
+.sobre-description-box {
+    font-size: 1em;
+    width: 80%;
+}
+.sobre-description-box p {
+    text-align: justify;
+}
+
+/* SERVIÇOS */
+
+.servicos-section {
+    padding-bottom: 4em;
+}
+.servicos-box {
+    gap: 5em;
+}
+.servico {
+    width: 15em;
+    height: 15em;
+    padding: 1.5em 1em;
+    background-color: var(--light-gray);
+}
+.servico-titulo {
+    font-size: 1.2em;
+}
+.servico-imagem-box {
+    width: 7em;
+    margin: auto;
+}
+.segunda-linha {
+    margin-top: 5em;
+}
+
+/* TESTEMUNHOS SECTION */
+
+.testemunhos-section {
+    padding-top: 2em;
+    background-color: #e45927d0;
+}
+.swiper-wrapper {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.testemunho-box {
+    width: 23em;
+    background-color: #d9d9d981;
+    padding: 1.5em;
+    padding-top: 4em;
+    margin: auto;
+}
+.testemunho-box img {
+    width: 5em;
+    margin: auto;
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--light-orange);
+}
+.testemunho-box .description {
+    font-style: italic;
+}
+.testemunho-nome {
+    color: black;
+    font-weight: 600;
+}
+.testemunho-cargo {
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+/* FALE CONNOSCO SECTION */
+
+.fale-connosco-section {
+    padding-bottom: 4em;
+}
+.fale-connosco-description {
+    font-size: 1em;
+    color: var(--gray);
+}
+.contacte-section {
+    margin-top: 5em;
+}
+.endereco-box, .telefone-box, .email-box {
+    padding-bottom: 1.5em;
+}
+.titulo-contacto {
+    color: var(--gray);
+    font-weight: 500;
+    font-size: 1.2em;
+    padding-bottom: 1em;
+}
+.rua, .codigo-postal, .numero1, .numero2, .email {
+    color: var(--medium-gray);
+    font-size: 0.9em;
+}
+
+/* Formulário */
+
+form input, form textarea {
+    padding: 1em 0.8em;
+    background-color: var(--light-gray);
+    color: var(--gray);
+    font-size: 0.9em;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.form-left {
+    width: 100%;
+    gap: 2em;
+}
+.form-right {
+    width: 100%;
+}
+.submit-box button {
+    border: none;
+    background-color: var(--light-orange);
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    transition: ease-in-out 0.2s;
+}
+.submit-box button:hover {
+    background-color: var(--dark-orange);
+    transform: scale(0.9);
+}
+
+/* FOOTER */
+
+/* Redes Sociais */
+footer {
+    background-color: var(--medium-gray);
+    padding: 3em 0;
+}
+.sociais-box img {
+    width: 2em;
+    transition: 0.2s;
+}
+.sociais-box img:hover {
+    transform: scaleX(1.3);
+}
+
+/* Dados da Empresa */
+.company-box {
+    background: #8b949b;
+    padding: 1em 2em;
+}
+.company-box span {
+    font-weight: bold;
+}
+.footer-description {
+    color: var(--light-gray);
+    font-size: 0.9em;
+}
+
+/* Footer Menu */
+.footer-menu ul li {
+    list-style-type: none;
+}
+.footer-menu ul li a {
+    text-decoration: none;
+    color: var(--light-gray);
+    transition: ease-in-out 0.2s;
+}
+.footer-menu ul li a:hover {
+    color: var(--gray);
+}
+
+/* Desenvolvido por */
+.desenvolvido-por {
+    background-color: var(--gray);
+}
+.desenvolvido-por p {
+    color: var(--light-gray);
+    font-size: 0.8em;
+}
+.desenvolvido-por a {
+    font-size: 1.1em;
+    color: var(--light-gray);
+    transition: ease-in-out 0.2s;
+}
+.desenvolvido-por a:hover {
+    color: var(--medium-gray);
+}
+
+/* Botão Topo da Página */
+
+.topo-botao {
+    width: 3em;
+    position: fixed;
+    bottom: -4em;
+    right: 1em;
+    cursor: pointer;
+    z-index: 9;
+    transition: 0.5s;
+}
+.topo-botao:hover {
+    transform: scale(1.4);
+}
+.bottom {
+    bottom: 7em !important;
+}
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .menu-nav-box {
+        display: none;
+    }
+    .open-hidden-menu {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hidden-menu-container {
+        display: none !important;
+    }
+    .open-hidden-menu {
+        display: none !important ;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-section {
+        justify-content: center;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .slogan-description {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .fale-connosco-section {
+        position: relative;
+        padding-bottom: 8em;
+    }
+    .contactos-box {
+        text-align: center;
+    }
+    .form-left, .form-right {
+        padding-top: 1.5em;
+    }
+    .submit-box {
+        position: absolute;
+        bottom: 4em;
+        right: 0;
+        left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .close-hidden-menu {
+        right: 1em;
+    }
+    .main-slogan-box h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 442px) {
+    .company-name {
+        display: none;
+    }
+    .main-section {
+        height: 105vh;
+    }
+    .main-slogan-box h1 {
+        font-size: 1.7em;
+    }
+    .testemunho-box {
+        width: 18em;
+    }
+}

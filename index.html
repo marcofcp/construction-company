@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marco Pereira">
+    <meta name="description" content="Empresa de Construção Civil, variados tipos de serviços e manutenções! Dispomos de prévia consultoria para cada cliente e situação específica!">
+    <meta name="keywords" content="construção civil, consultoria, reparações, manutenção de instalações">
+    <title>Document</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <!-- SweeperJS -->
+    <link rel="stylesheet" href="./assets/SwiperJS/swiper-bundle.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <div class="container-fluid py-3">
+            <div class="container header-navbar">
+                <div class="row">
+                    <div class="col-lg-5 header-logo-box d-flex gap-3">
+                        <img src="./assets/images/logo.png" alt="Logótipo da empresa" align-self-center>
+                        <p class="m-0 text-uppercase align-self-center company-name">Construction Company</p>
+                    </div>
+                    <div class="col-lg-7 d-flex justify-content-end align-self-center">
+                        <div class="menu-nav-box">
+                            <ul class="m-0 menu-navbar d-flex gap-4 align-self-center">
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="#sobre">SOBRE</a></li>
+                                <li><a href="#servicos">SERVIÇOS</a></li>
+                                <li><a href="#testemunhos">TESTEMUNHOS</a></li>
+                                <li><a href="#contacto">PORQUÊ NÓS</a></li>
+                                <li><a href="#contacto">CONTACTOS</a></li>
+                            </ul>
+                        </div>
+                        <img src="./assets/images/hamburger-menu-100.png" alt="Menu"
+                            class="open-hidden-menu align-self-center" id="open-hidden-menu">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hidden Menu -->
+
+    <div class="hidden-menu-container d-flex justify-content-center" id="hidden-menu-container">
+        <div class="hidden-menu-box align-self-center">
+            <ul class="d-flex flex-column gap-5">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#servicos">SERVIÇOS</a></li>
+                <li><a href="#testemunhos">PORQUÊ NÓS</a></li>
+                <li><a href="contacto">CONTACTOS</a></li>
+            </ul>
+        </div>
+        <img src="./assets/images/close-100.png" alt="Close Menu" class="close-hidden-menu" id="close-hidden-menu">
+    </div>
+
+    <!-- Main Section -->
+
+    <section class="main-section-container overflow-hidden">
+        <div class="container-fluid main-section d-flex">
+            <div class="main-container">
+                <div class="main-slogan-box d-flex flex-column">
+                    <h1>PASSAMOS DO PAPEL PARA A REALIZAÇÃO FÍSICA</h1>
+                    <p class="m-0 slogan-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                        repellendus, eveniet labore porro, praesentium vero minima culpa et reprehenderit pariatur
+                        voluptatum dolorum laboriosam fugit.</p>
+                </div>
+                <div class="slogan-button-box d-flex justify-content-center">
+                    <a href="#">Saber mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Separador e Título -->
+    <div class="container-fluid separador-section" id="sobre">
+        <h2 class="m-0 titulo-section text-uppercase text-center">Sobre Nós</h2>
+        <div class="separador"></div>
+    </div>
+
+    <!-- SOBRE NÓS SECTION -->
+
+    <section class="sobre-nos-section overflow-hidden">
+        <div class="container sobre-nos-container">
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <img src="./assets/images/sobre_nos.jpg" alt="Sobre nós" class="sobre-img align-self-center">
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center pt-lg-0 pt-5">
+                    <div class="sobre-description-box align-self-center">
+                        <p class="m-0 pb-5">Lorem ipsum dolor sit amet consectetur. Fringilla a semper ipsum pulvinar
+                            pretium nunc tellus. Sed consequat elementum dignissim est et eget volutpat id. Malesuada
+                            eget sit eu ut feugiat diam. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit
+                            amet consectetur.</p>
+                        <p class="m-0">Tempus velit egestas id enim accumsan vestibulum. Massa a pellentesque molestie
+                            aliquam feugiat quisque integer duis vitae. Lorem posuere dui.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separador e Título -->
+    <div class="container-fluid separador-section" id="servicos">
+        <h2 class="m-0 titulo-section text-uppercase text-center">Serviços</h2>
+        <div class="separador"></div>
+    </div>
+
+    <!-- SERVIÇOS SECTION -->
+
+    <section class="servicos-section  overflow-hidden">
+
+        <!-- Primeira linha de três -->
+        <div class="container primeira-linha">
+            <div class="row">
+                <div class="servicos-box d-flex justify-content-center flex-wrap">
+                    <!-- Serviço -->
+                    <div class="servico d-flex flex-column justify-content-center">
+                        <p class="servico-titulo m-0 text-center text-uppercase">CONSTRUÇÃO</p>
+                        <div class="servico-imagem-box">
+                            <img src="./assets/images/construction_96.png" alt="Construção" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <!-- Serviço -->
+                    <div class="servico d-flex flex-column justify-content-center gap-3">
+                        <p class="servico-titulo m-0 text-center text-uppercase">DEMOLIÇÃO</p>
+                        <div class="servico-imagem-box d-flex justify-content-center">
+                            <img src="./assets/images/demolition-96.png" alt="Construção" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <!-- Serviço -->
+                    <div class="servico d-flex flex-column justify-content-center gap-3">
+                        <p class="servico-titulo m-0 text-center text-uppercase">CONSULTORIA</p>
+                        <div class="servico-imagem-box d-flex justify-content-center">
+                            <img src="./assets/images/consulting-96.png" alt="Construção" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segunda linha de três -->
+        <div class="container segunda-linha">
+            <div class="row">
+                <div class="servicos-box d-flex justify-content-center flex-wrap">
+                    <!-- Serviço -->
+                    <div class="servico d-flex flex-column justify-content-center gap-3">
+                        <p class="servico-titulo m-0 text-center text-uppercase">CANALIZAÇÃO</p>
+                        <div class="servico-imagem-box d-flex justify-content-center">
+                            <img src="./assets/images/plumber.png" alt="Construção" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <!-- Serviço -->
+                    <div class="servico d-flex flex-column justify-content-center gap-3">
+                        <p class="servico-titulo m-0 text-center text-uppercase">RENOVAÇÕES</p>
+                        <div class="servico-imagem-box d-flex justify-content-center">
+                            <img src="./assets/images/refurbishment.png" alt="Construção" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <!-- Serviço -->
+                    <div class="servico d-flex flex-column justify-content-center gap-3">
+                        <p class="servico-titulo m-0 text-center text-uppercase">ELETRICIDADE</p>
+                        <div class="servico-imagem-box d-flex justify-content-center">
+                            <img src="./assets/images/electrical-96.png" alt="Construção" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separador e Título -->
+    <div class="container-fluid separador-section" id="testemunhos">
+        <h2 class="m-0 titulo-section text-uppercase text-center">Testemunhos</h2>
+        <div class="separador"></div>
+    </div>
+
+    <!-- TESTEMUNHOS -->
+
+    <section class="testemunhos-section">
+
+        <div class="testemunhos-container-slider">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="testemunho-box d-flex flex-column">
+                            <img src="./assets/images/testemunho_1.png" alt="John Doe">
+                            <p class="m-0 text-center mb-5 description">"Lorem ipsum dolor sit amet consectetur. Mauris
+                                sollicitudin sed gravida nibh erat sed mattis tincidunt sagittis. Nulla senectus aliquet
+                                egestas sed. Sagittis imperdiet quisque sed sodales sed amet. Imperdiet amet quam
+                                volutpat odio leo dui mollis leo. Venenatis risus morbi non diam cursus urna orci morbi
+                                ac."</p>
+                            <p class="m-0 testemunho-nome text-center mb-2">John Doe</p>
+                            <p class="m-0 testemunho-cargo text-center">Cliente 1</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="testemunho-box d-flex flex-column">
+                            <div class="testemunho-img-box">
+                                <img src="./assets/images/testemunho_2.png" alt="John Doe" class="img-fluid">
+                            </div>
+                            <p class="m-0 text-center mb-5  description">"Lorem ipsum dolor sit amet consectetur. Mauris
+                                sollicitudin sed gravida nibh erat sed mattis tincidunt sagittis. Nulla senectus aliquet
+                                egestas sed. Sagittis imperdiet quisque sed sodales sed amet. Imperdiet amet quam
+                                volutpat odio leo dui mollis leo. Venenatis risus morbi non diam cursus urna orci morbi
+                                ac."</p>
+                            <p class="m-0 testemunho-nome text-center mb-2">John Doe</p>
+                            <p class="m-0 testemunho-cargo text-center">Cliente 2</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="testemunho-box d-flex flex-column">
+                            <div class="testemunho-img-box">
+                                <img src="./assets/images/testemunho_3.png" alt="John Doe" class="img-fluid">
+                            </div>
+                            <p class="m-0 text-center mb-5  description">"Lorem ipsum dolor sit amet consectetur. Mauris
+                                sollicitudin sed gravida nibh erat sed mattis tincidunt sagittis. Nulla senectus aliquet
+                                egestas sed. Sagittis imperdiet quisque sed sodales sed amet. Imperdiet amet quam
+                                volutpat odio leo dui mollis leo. Venenatis risus morbi non diam cursus urna orci morbi
+                                ac."</p>
+                            <p class="m-0 testemunho-nome text-center mb-2">John Doe</p>
+                            <p class="m-0 testemunho-cargo text-center">Cliente 3</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="testemunho-box d-flex flex-column">
+                            <div class="testemunho-img-box">
+                                <img src="./assets/images/testemunho_1.png" alt="John Doe" class="img-fluid">
+                            </div>
+                            <p class="m-0 text-center mb-5  description">"Lorem ipsum dolor sit amet consectetur. Mauris
+                                sollicitudin sed gravida nibh erat sed mattis tincidunt sagittis. Nulla senectus aliquet
+                                egestas sed. Sagittis imperdiet quisque sed sodales sed amet. Imperdiet amet quam
+                                volutpat odio leo dui mollis leo. Venenatis risus morbi non diam cursus urna orci morbi
+                                ac."</p>
+                            <p class="m-0 testemunho-nome text-center mb-2">John Doe</p>
+                            <p class="m-0 testemunho-cargo text-center">Cliente 4</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Separador e Título -->
+    <div class="container-fluid separador-section" id="contacto">
+        <h2 class="m-0 titulo-section text-uppercase text-center">Fale Connosco</h2>
+        <div class="separador"></div>
+    </div>
+
+    <!-- FALE-CONNOSCO -->
+
+    <section class="fale-connosco-section">
+        <div class="container">
+            <p class="m-0 text-center fale-connosco-description">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Enim voluptates animi laboriosam accusantium in soluta quo unde sequi sapiente, ipsum suscipit
+                dolorum quasi, repudiandae nihil obcaecati porro? Perferendis, veritatis velit.</p>
+            <form action="https://formsubmit.co/marco.fcp85@gmail.com" method="POST">
+                <div class="row contacte-section">
+                    <div class="col-md-4">
+                        <div class="contactos-box">
+                            <div class="endereco-box">
+                                <p class="m-0 titulo-contacto">Endereço</p>
+                                <p class="m-0 rua">Avenida D. Sebastião</p>
+                                <p class="m-0 codigo-postal">8900-556 Guarda</p>
+                            </div>
+                            <div class="telefone-box">
+                                <p class="m-0 titulo-contacto">Telefone</p>
+                                <p class="m-0 numero1">+351 123 456 789</p>
+                                <p class="m-0 numero2">+351 987 654 321</p>
+                            </div>
+                            <div class="email-box">
+                                <p class="m-0 titulo-contacto">E-mail</p>
+                                <p class="m-0 email">construction.company@cc.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-left d-flex flex-column">
+                            <input type="text" name="name" id="nome" placeholder="Nome" required>
+                            <input type="email" name="email" id="email" placeholder="E-mail" required>
+                            <input type="text" name="subject" id="assunto" placeholder="Assunto" required>
+                            <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+                            <input type="hidden" name="_autoresponse"
+                                value="Recebemos o seu e-mail. Responderemos com a maior brevidade possível! Obrigado">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                            <div class="submit-box d-flex justify-content-center">
+                                <button type="submit">Enviar Mensagem</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-right">
+                            <textarea name="message" id="mensagem" rows="12" placeholder="Mensagem" required></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="sociais-box d-flex flex-column justify-content-center gap-4">
+                        <a href="https://www.facebook.com" target="_blank"><img src="./assets/images/facebook-50.png"
+                                alt="Facebook" target="_blank"></a>
+                        <a href="https://www.twitter.com" target="_blank"><img src="./assets/images/twitter-50.png"
+                                alt="Twitter"></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="./assets/images/instagram-50.png"
+                                alt="Instagram"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex flex-column justify-content-center gap-4 pt-md-0 pt-5">
+                    <div>
+                        <p class="m-0 company-box text-center">
+                            <img src="./assets/images/logo.png" alt="Construction Company Logo"
+                                class="align-self-center">
+                            <span class="text-uppercase align-self-center">CONSTRUCTION COMPANY</span>
+                        </p>
+                    </div>
+                    <p class="m-0 text-center footer-description">Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Fuga laborum consequuntur cum necessitatibus cumque distinctio. Consequuntur voluptatem
+                        quisquam eum harum? Fuga laborum consequuntur cum necessitatibus cumque distinctio.</p>
+                </div>
+                <div class="col-md-4 d-flex  justify-content-center align-self-center pt-md-0 pt-5">
+                    <div class="footer-menu">
+                        <ul class="d-flex flex-column gap-4">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Serviços</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- DESENVOLVIDO POR -->
+
+    <div class="container-fluid desenvolvido-por py-3">
+        <p class="m-0 text-center"> Copyright Construction Company - Desenvolvido por <a href="#">Marco Pereira</a></p>
+    </div>
+
+    <!-- BOTÃO TOPO DA PÁGINA -->
+
+    <a href="#">
+        <img src="./assets/images/top-100.png" alt="Topo da página" title="Topo da Página" class="topo-botao"
+            id="topo-botao">
+    </a>
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap Script -->
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- ScrollReveal -->
+    <script src="./assets/ScrollReveal/scrollreveal.js"></script>
+    <!-- SweeperJS -->
+    <script src="./assets/SwiperJS/swiper-bundle.min.js"></script>
+    <!-- ScrollReveal -->
+    <script src="./assets/ScrollReveal/scrollreveal.js"></script>
+    <!-- External Script -->
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
